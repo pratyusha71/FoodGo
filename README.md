@@ -1,50 +1,61 @@
-# Cozy Mode Switcher
+# FoodGo – Online Food Ordering and Delivery Tracking Simulator
 
-11. THEME SWITCHER (LIGHT MODE AND DARK MODE)
+## About the Project
 
-Implement a fully functional theme toggle feature throughout the entire website.
+FoodGo is a web-based Online Food Ordering and Delivery Tracking Simulator developed to demonstrate the complete process of ordering food online. The application allows users to explore a food menu, select food items, manage their cart, place orders, and simulate delivery tracking through different stages.
 
-Provide a Light Mode and Dark Mode toggle button in the navbar.
+The project provides an interactive and user-friendly interface designed to simulate the experience of a real-world food delivery platform.
 
-Use a sun icon for Light Mode and a moon icon for Dark Mode.
+## Features
 
-Light Mode should use a warm cream/white background, dark text and orange accents.
+- **Home Page:** Attractive landing page showcasing the food ordering application.
+- **Food Menu:** Browse food items across different categories.
+- **Search and Filter:** Search for food items and filter by category.
+- **Shopping Cart:** Add food items, update quantities and remove items.
+- **Checkout:** Enter customer and delivery details.
+- **Order Placement:** Place orders and generate unique order IDs.
+- **Order Confirmation:** View order details and billing information.
+- **Delivery Tracking:** Simulate order progress through delivery stages.
+- **My Orders:** View previous orders and their statuses.
+- **Light and Dark Mode:** Switch between light and dark themes.
+- **Local Storage:** Preserve cart, orders and theme preferences in the browser.
 
-Dark Mode should use a dark charcoal/navy background, light text and orange accent colours.
+## Delivery Tracking Stages
 
-The theme must apply consistently to all pages, including Home, Menu, Cart, Checkout, My Orders, Order Confirmation, Tracking and About.
+Orders progress through the following simulated stages:
 
-Ensure food cards, buttons, navbar, forms, footer, dialogs and text adapt properly to the selected theme.
+1. Order Placed
+2. Order Confirmed
+3. Food Preparing
+4. Out for Delivery
+5. Delivered
 
-Avoid unreadable text or low contrast.
+## Technologies Used
 
-Save the user's theme preference in localStorage.
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
+- Local Storage
 
-When the website is refreshed, restore the previously selected theme.
+## How the Application Works
 
-Add a smooth transition when switching themes.
+1. Browse the available food items.
+2. Select food items and add them to the cart.
+3. Modify quantities or remove items as required.
+4. Proceed to checkout and enter delivery details.
+5. Place the order and receive an order confirmation.
+6. Track the order using the delivery tracking simulator.
+7. Simulate the delivery progress until the order is delivered.
 
-Make the toggle attractive and easy to access on both desktop and mobile.
+## Purpose of the Project
 
-The theme switcher must be fully functional, not just decorative.
+The purpose of this project is to demonstrate the working process of an online food ordering and delivery tracking system. It provides an interactive simulation of food selection, cart management, billing, order placement and delivery tracking.
 
-This project was built with [Lovable](https://lovable.dev).
+## Note
 
-## Build with Lovable
+This application is developed as an educational project and simulates food ordering and delivery tracking. It does not involve real payments or actual delivery services.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/3d739b91-f752-49f5-853f-f2867f2086be).
+---
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+**Project Name:** FoodGo – Online Food Ordering and Delivery Tracking Simulator
