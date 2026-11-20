@@ -60,7 +60,7 @@ function CartPage() {
           />
         ) : (
           <div className="grid gap-8 lg:grid-cols-[1fr_380px]">
-            <section aria-label="Cart items" className="space-y-4">
+            <section aria-label="Cart items" className="min-w-0 space-y-4">
               <div className="flex items-center justify-between">
                 <h2 className="font-display text-xl font-semibold text-foreground">Items</h2>
                 <AlertDialog>
@@ -69,7 +69,7 @@ function CartPage() {
                       <Trash2 /> Clear cart
                     </Button>
                   </AlertDialogTrigger>
-                  <AlertDialogContent>
+                  <AlertDialogContent className="w-[calc(100%-2rem)] rounded-2xl">
                     <AlertDialogHeader>
                       <AlertDialogTitle>Clear your cart?</AlertDialogTitle>
                       <AlertDialogDescription>All {cartCount} items will be removed. This can't be undone.</AlertDialogDescription>
@@ -91,7 +91,7 @@ function CartPage() {
                       <div className="min-w-0">
                         <div className="flex items-center gap-2">
                           <VegMark veg={item.veg} className="shrink-0" />
-                          <h3 className="truncate font-display text-lg font-semibold text-card-foreground">{item.name}</h3>
+                          <h3 className="line-clamp-2 font-display text-base leading-snug sm:text-lg font-semibold text-card-foreground">{item.name}</h3>
                         </div>
                         <p className="mt-1 text-sm text-muted-foreground">{formatINR(item.price)} each</p>
                       </div>

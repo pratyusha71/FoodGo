@@ -57,7 +57,7 @@ function TrackLookupPage() {
                 onChange={(e) => { setCode(e.target.value); setError(""); }}
                 placeholder="e.g. FG261120-AB12"
                 aria-invalid={!!error}
-                className="h-12 rounded-full bg-background pl-11 font-mono uppercase"
+                className="h-12 rounded-full bg-background pl-11 font-mono uppercase placeholder:font-sans placeholder:normal-case"
               />
             </div>
             <Button type="submit" variant="hero" size="xl">Track</Button>
