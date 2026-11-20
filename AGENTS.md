@@ -28,3 +28,9 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- No backend: cart, orders, tracking progress and theme live in browser localStorage (`src/lib/store.tsx`, `src/lib/theme.ts`); read storage only in effects so SSR and first client render match.
+- Theme is a `dark` class on `<html>`, set before paint by the inline head script in `__root.tsx`; theme-dependent visuals use `dark:` variants instead of React state to avoid a flash.
+- Business rules (delivery charge, phone validation, order IDs, status steps) live as pure functions in `src/lib/pricing.ts` and `src/lib/orders.ts` with tests in `src/test/`.
+- Stored orders keep item id/name/price only; images are looked up from `src/lib/menu.ts` at render time because built asset URLs change between deploys.
